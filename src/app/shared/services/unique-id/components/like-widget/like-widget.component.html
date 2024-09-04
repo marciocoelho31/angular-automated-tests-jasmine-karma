@@ -1,0 +1,12 @@
+<div class="like-widget-container" (click)="like()">
+    <button class="button button-primary" role="button" tabindex="0" [attr.aria-describedby]="id">
+        Click!
+    </button>
+    <span 
+        [attr.id]="id" 
+        [attr.aria-label]="likes + ': people liked'"
+        aria-live="true"
+        aria-atomic="true"
+        class="like-counter"
+        >{{ likes }}</span>
+</div>
